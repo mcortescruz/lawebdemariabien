@@ -1,0 +1,63 @@
+:root{
+    --micolorbtn: rgb(149, 149, 245);
+    --micolorbtn-pulsado: rgb(98, 98, 146);
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 18px; /*1em=16px*/
+}
+
+.container-flex {
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    height: 500px;
+    width: 100%;
+    border: 1px solid black;
+    background-color:var(--micolorbtn);
+    
+    ;
+    /*align-items: center;*/
+    align-content: center;
+}
+
+.container-flex div {
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--micolorbtn);
+    background-color: aqua;
+    margin: 30px;
+}
+
+.container-flex div:hover{
+    border: 1px solid var(--micolorbtn-pulsado);
+    background-color: var(--micolorbtn-pulsado);
+    margin: 30px;
+}
+
+.container-flex div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex div:nth-child(5) {
+    background-color: red;
+}
+
+.container-flex div:last-child {
+    background-color: green;
+}
+
+.container-flex div:first-child {
+    background-color: black;
+}
+
+
+
+
